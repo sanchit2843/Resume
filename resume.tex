@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Sanchit Tanwar
+% Adapted from: Amlaan Bhoi
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \small \textbf{\href{sanchittanwar.ml}{\huge Sanchit Tanwar}} \\  \href{mailto:sanchittanwar75@gmail.com}{\color{blue}\underline{sanchittanwar75@gmail.com}} $\vert$
+  +919050402843 $\vert$
+  LinkedIn: \href{https://www.linkedin.com/in/sanchit2843/}{\color{blue}\underline{sanchit2843}} $\vert$
+  Github: \href{https://github.com/sanchit2843}{\color{blue}\underline{sanchit2843}} \\
+  \small Patiala,India
+\end{center}
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thapar Institute of engineering and technology}{Patiala, India}
+      {Bachelor of Engineering Electronics and Communication;  GPA: 8.07/10}{Expected May 2020}{
+    }
+    \resumeSubheading
+      {DAV Public School}{Panipat, India}
+      {High School;  Percentage: 90.2}{2015-2016}
+    
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     \textbf{Languages}{: Python, C++, Matlab}
+    }
+    \vspace{-5pt}
+    \item{
+    
+    \textbf{Technologies}{: Deep Learning, Deep Reinforcement Learning(DQN, DDQN, A3C), Arduino, Raspberry pi, Latex, ARM, AVR}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{Libraries}{: PyTorch, TensorFlow, Keras, Scikit-Learn, Numpy, Pandas, Spark, Jupyter, OpenCV, PIL, Librosa, NLTK}
+    }
+\resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\shorterSection{Projects}
+  \resumeSubHeadingListStart
+  %Engagement 
+    \resumeSubItem{Engagement Detection}
+     {Research project to detect engagement level of students during MOOC using deep learning.(Ongoing)
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Implementing various algorithms of video classification such as CRNN , c3d, t3d on Daisee and emotiw Dataset. 
+        \end{itemize}
+     }
+     % Artificial eyes
+    \resumeSubItem{\color{blue}\href{https://github.com/sanchit2843/ArtificialEyes}{Artificial eyes}}{Device for blinds that uses CNN and LSTM to generate caption(Show, attend and tell) and converts the captions to speech of desired language and get output on raspberry pi.}
+    
+    % Self driving car
+    \resumeSubItem{\color{blue}\href{https://github.com/sanchit2843/SelfDrivingCar}{Self Driving Car}}
+      {
+      Self driving car using simulation tools.
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Lane finding in road images, traffic sign classifier.(Implemented)
+            \item Steering angle prediction from driving video dataset.(Implemented)
+            \item Vehicle detection and Segmentation using YOLO and ESNET. (Ongoing)
+        \end{itemize}
+      }
+      
+      %Crime 
+    \resumeSubItem{\color{blue}\href{https://github.com/sanchit2843/Videoclassification}{CrimeDetection}}
+      {Detecting crimes from CCTV footage in real-time using UCF crime dataset and slow-fast neural networks for video classification.}
+      
+      %Healthcad
+      
+    \resumeSubItem{\color{blue}\href{https://github.com/sanchit2843/healthcad}{HealthCad}}
+      {Implemented some of the latest deep learning algorithms to help doctors diagnose various diseases.
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Trained Densenet on malaria, chexpert, diabetic retinopathy dataset with class activation map generation to visualize results. 
+            \item Conv-1d based neural network for atrial fibrillation classification using MIT-BIH dataset. 
+        \end{itemize}
+      }
+      
+      %GAN
+      \resumeSubItem{\color{blue}\href{https://github.com/sanchit2843/GAN-applications}{GAN}}
+      {Continuous project where I implement several applications of GAN's.
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Dog like image generation using DCGAN
+            \item Semantic segmantation of city landscapes using pix2pix GAN.
+        \end{itemize}
+      }
+      
+      %RL
+      \resumeSubItem{\color{blue}\href{https://github.com/sanchit2843/Reinforcementlearningprojects}{PongAI}}
+      { Atari game (pong) playing AI based on DQN agent implemented using open ai gym and pytorch.
+      }
+      
+      %Genre
+      \resumeSubItem{\color{blue}\href{https://github.com/sanchit2843/MusicGenreClassification}{Music Genre Classification}}
+      { Preprocessing data by taking Mel spectrograms of audio and classifying using densenet based architecture
+      }
+      
+      %Lyrics Generation
+      
+  \resumeSubHeadingListEnd
+
+%-----------Addtional information & Achievements-----------------
+\shorterSection{Achievements}
+  \resumeSubHeadingListStart
+  \small
+    \item{Placed top 25 \% in 2 kaggle competetion of computer vision with accuracy ~99.95\%.}
+    \vspace{-5pt}
+    \item{Writer for Towards data science, The startup and Towards AI.}
+    \vspace{-5pt}
+    \item{Won two competitions in Elementos technical fest.}
+    \vspace{-5pt}
+    \item{Student Achievement Award - IETE(Institute of electronics and telecommunication engineers)}
+    
+  \resumeSubHeadingListEnd
+  %-----------POR-----------------
+ \shorterSection{Positions of Responsibility}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      \small
+      \item{\textbf{General Secretary}}{IETE (May 2018 - Present)}
+      \vspace{-5pt}
+      \item{Managing day to day activities of Thapar chapter of the nationwide technical society of electronics and communication. I also mentored 24 students.}
+          \vspace{-5pt}
+
+    \resumeSubheading
+      \small
+      \item{\textbf{Technical Head}}{IETE (August 2017- May 2018)}
+      \vspace{-5pt}
+      \item{Managing day to day activities of Thapar chapter of the nationwide technical society of electronics and communication. I also mentored 24 students.}
+  \resumeSubHeadingListEnd
+  
+\shorterSection{Interests and additional information}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      \small
+      \item{\color{blue}\textbf{Blogging}}
+      \hfill
+      \item{Effectively Work in a team}
+%-------------------------------------------
+\end{document}
