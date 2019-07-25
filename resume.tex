@@ -16,6 +16,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex, hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{multicol}
 
 \usepackage[charter]{mathdesign} % Bitstream Charter
 % \usepackage{newpxtext,newpxmath} % Palatino
@@ -51,7 +52,9 @@
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
-
+\newcommand{\resumeitem}[2]{
+  \small{$\bullet$ #1}\hfill\raggedleft{$\bullet$ #2}
+}
 \newcommand{\resumeItemNoBullet}[2]{
   \item[]\small{
     \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
@@ -65,7 +68,13 @@
       \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
-
+\newcommand{\resumesubheading}[4]{
+  \vspace{-3pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -77,6 +86,7 @@
 
 % custom commands
 \newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+\newcommand{\shortersection}[2]{\vspace{11pt}\scshape\raggedright\large{\color{black}\titlerule \vspace{-10pt}#1}\hfill\scshape\large{#2}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,12 +95,13 @@
 \begin{document}
 
 %----------HEADING-----------------
+
 \begin{center}
-  \small \textbf{\href{sanchittanwar.ml}{\huge Sanchit Tanwar}} \\  \href{mailto:sanchittanwar75@gmail.com}{\color{blue}\underline{sanchittanwar75@gmail.com}} $\vert$
-  +919050402843 $\vert$
+  \small \textbf{\huge Sanchit Tanwar} \\  \href{mailto:sanchittanwar75@gmail.com}{\color{blue}\underline{sanchittanwar75@gmail.com}} $\vert$
+  {\color{blue}+919050402843} $\vert$
   LinkedIn: \href{https://www.linkedin.com/in/sanchit2843/}{\color{blue}\underline{sanchit2843}} $\vert$
-  Github: \href{https://github.com/sanchit2843}{\color{blue}\underline{sanchit2843}} \\
-  \small Patiala,India
+  Github: \href{https://github.com/sanchit2843}{\color{blue}\underline{sanchit2843}} $\vert$ \href{sanchittanwar.ml}{\color{blue}\underline{Website}}\\
+  \small Thapar university, Patiala, India
 \end{center}
 
 %-----------EDUCATION-----------------
@@ -219,12 +230,21 @@
       \item{Managing day to day activities of Thapar chapter of the nationwide technical society of electronics and communication. I also mentored 24 students.}
   \resumeSubHeadingListEnd
   
-\shorterSection{Interests and additional information}
+\shortersection{Interests}{additional information}
   \resumeSubHeadingListStart
-  \resumeSubheading
-      \small
-      \item{\color{blue}\textbf{Blogging}}
-      \hfill
-      \item{Effectively Work in a team}
+  
+        \resumeitem{\color{blue}\href{https://medium.com/@sanchittanwar75}{Blogging}}{Enthusiastically work in team} \newline
+        \resumeitem{Badminton}{Logical Approach}\newline
+      \resumeitem{Music}{Enthusiastic about improving skills}
+      
+      %\vspace{-5pt}
+      %\item{Music}
+      
+      %\vspace{-5pt}
+      %\item{Music}
+      
+%      {Effectively work in team}
+%      {Enthusiastic to learn new things}
+        \resumeSubHeadingListEnd
 %-------------------------------------------
 \end{document}
